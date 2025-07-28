@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Kosmos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Academia Kosmos</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#clases">Clases y Tarifas</a></li>
+                    <li><a href="#nivel">Nivel de Español</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                    <li><a href="#juego">Minijuego</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                </ul>
+            </nav>
+            <select id="language-switcher">
+                <option value="es" selected>ES</option>
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Aprende español de forma fácil y divertida</h2>
+            <p>Descubre tu nivel, participa en la comunidad y mejora cada día.</p>
+        </div>
+    </section>
+
+    <section id="clases" class="section">
+        <div class="container">
+            <h2>Clases y Tarifas</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Clases Relámpago</h3>
+                    <p>Pack 5 clases (L-V)</p>
+                    <p class="price"><span class="old-price">70€</span> 49€</p>
+                </div>
+                <div class="card">
+                    <h3>Repaso +QueClases</h3>
+                    <p>3-4 clases por semana</p>
+                    <p class="price"><span class="old-price">100€</span> 70€</p>
+                </div>
+                <div class="card">
+                    <h3>Español día a día</h3>
+                    <p>Clases flexibles a X€/hora</p>
+                    <p class="price"><span class="old-price">X+30%</span> X€</p>
+                </div>
+                <div class="card">
+                    <h3>Cursos Intensivos</h3>
+                    <p>Preparación selectividad, DELLE</p>
+                    <p class="price"><span class="old-price">X+3€</span> X€</p>
+                </div>
+            </div>
+            <div id="contador-oferta">
+                <p>¡Oferta limitada del 30%! Tiempo restante: <span id="countdown">24:00:00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nivel" class="section">
+        <div class="container">
+            <h2>¿Qué nivel de Español tengo?</h2>
+            <p>Realiza nuestro <a href="#juego">minijuego</a> y descubre tu nivel (A1 - B2).</p>
+        </div>
+    </section>
+
+    <section id="comunidad" class="section">
+        <div class="container">
+            <h2>Comunidad</h2>
+            <div class="post">
+                <h4>Olga (Rusia)</h4>
+                <p>¿Cuál es la diferencia entre "ser" y "estar"?</p>
+                <span>👍 12</span>
+            </div>
+            <div class="post">
+                <h4>Iván (Ucrania)</h4>
+                <p>Yo siempre uso "estar" pero creo que me equivoco, ¿me ayudáis?</p>
+                <span>👍 8</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="juego" class="section">
+        <div class="container">
+            <h2>Minijuego</h2>
+            <p>Relaciona la palabra con la imagen correcta.</p>
+            <div id="game-area">
+                <div class="game-card" draggable="true">Casa</div>
+                <div class="game-card" draggable="true">Coche</div>
+                <div class="drop-area">[ Imagen Casa ]</div>
+                <div class="drop-area">[ Imagen Coche ]</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reseñas" class="section">
+        <div class="container">
+            <h2>Reseñas</h2>
+            <blockquote>“Las clases relámpago me ayudaron a aprobar en una semana.” – Laura</blockquote>
+            <blockquote>“La comunidad es ideal para practicar.” – Mark</blockquote>
+            <blockquote>“El minijuego me ayuda con vocabulario.” – Anna</blockquote>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Academia Kosmos</p>
+    </footer>
+</body>
+</html>
